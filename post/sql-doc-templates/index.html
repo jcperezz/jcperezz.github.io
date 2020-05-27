@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light"><head>
+    <title> Juan Carlos Perez | Sql Doc Templates </title>
+    <meta charset="utf-8"><meta name="generator" content="Hugo 0.71.1" /><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+    <meta name="description" content="java full-stack developer">
+    
+    <link rel="stylesheet" href="https://jcperezz.github.io/css/style.min.308db90b0dc25e1cdb269d858e5c74384cdd0444b23c31882a51c91775dfa921.css" integrity="sha256-MI25Cw3CXhzbJp2Fjlx0OEzdBESyPDGIKlHJF3XfqSE=" type="text/css">
+    <link rel="stylesheet" href="https://jcperezz.github.io/css/style.css" type="text/css">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <base href="https://jcperezz.github.io/">
+    
+    <link rel="shortcut icon" href="https://jcperezz.github.io/favicons/favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" sizes="180x180" href="https://jcperezz.github.io/favicons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="https://jcperezz.github.io/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="https://jcperezz.github.io/favicons/favicon-16x16.png">
+    <link rel="canonical" href="https://jcperezz.github.io/post/sql-doc-templates/">
+    
+    
+    <script type="text/javascript" src="https://jcperezz.github.io/js/anatole-header.min.c275265a259296f3dd50e8236a77fcbcadb1dbb9597d3045c675dcc2c7c58a93.js" integrity="sha256-wnUmWiWSlvPdUOgjanf8vK2x27lZfTBFxnXcwsfFipM="></script>
+</head><body><div class="sidebar animated fadeInDown">
+    <div class="logo-title">
+      <div class="title">
+        <img src="https://jcperezz.github.io/images/profile_250x250.jpg" alt="profile picture">
+        <h3 title=""><a href="/">Juan Carlos Perez</a></h3>
+        <div class="description">
+          <p>java full-stack developer</p>
+        </div>
+      </div>
+    </div>
+    <ul class="social-links">
+        
+        <li>
+        <a href="https://www.linkedin.com/in/juan-carlos-perez" rel="me" aria-label="Linkedin">
+          <i class="fa fa-2x fa-linkedin" aria-hidden="true"></i>
+        </a>          
+        </li>
+
+        
+        <li>
+        <a href="https://github.com/jcperezz" rel="me" aria-label="GitHub">
+          <i class="fa fa-2x fa-github" aria-hidden="true"></i>
+        </a>          
+        </li>
+
+        
+        <li>
+        <a href="" rel="me" aria-label="">
+          <i class="fa fa-2x " aria-hidden="true"></i>
+        </a>          
+        </li>
+
+        
+        <li>
+        <a href="mailto:jcarlosp1986@gmail.com" rel="me" aria-label="e-mail">
+          <i class="fa fa-2x fa-envelope" aria-hidden="true"></i>
+        </a>          
+        </li>
+
+        
+    </ul>
+    <div class="footer">
+        <div class="by_farbox">&copy; Juan Carlos Perez 2020 </div>
+      </div>
+    </div>
+</div><div class="main">
+            <div class="page-top animated fadeInDown">
+    <ul class="nav">
+        
+        
+        
+        <li><a  href="/" title="">Home</a></li>
+        
+        
+        <li><a  href="/post/" title="">Posts</a></li>
+        
+        
+        <li><a  href="/about/" title="">About</a></li>
+        
+    </ul>
+    <div class="themeswitcher">
+        <a class="theme-switch" title="Switch Theme">
+            <i class="fa fa-adjust fa-fw" aria-hidden="true"></i>
+        </a>
+    </div>
+</div>
+
+            <div class="autopagerize_page_element">
+                <div class="content">
+<div class="post animated fadeInDown">
+    <div class="post-content">
+
+        <div class="post-title">
+            <h3>Sql Doc Templates
+            </h3>
+            
+            <div class="info">
+                <i class="fa fa-sun-o"></i><span class="date">Wed, May 27, 2020</span>
+                <i class="fa fa-clock-o"></i><span class="reading-time">3-minute read</span>
+            </div>
+            
+        </div>
+
+        <div class="post-tableOfContents">
+            <div class="info">
+                <nav id="TableOfContents">
+  <ul>
+    <li><a href="#overview">Overview</a></li>
+    <li><a href="#procedures-functions-and-plsql-blocks">Procedures, functions and PL/SQL blocks</a>
+      <ul>
+        <li><a href="#header-template">Header Template</a></li>
+        <li><a href="#comment-code">Comment Code</a></li>
+        <li><a href="#declarations-and-comment-blocks-of-code">Declarations And Comment Blocks of Code</a></li>
+        <li><a href="#code-separators">Code Separators</a></li>
+        <li><a href="#manual-version-control">Manual &ldquo;Version Control&rdquo;</a></li>
+        <li><a href="#putting-it-all-together">Putting It All Together</a></li>
+      </ul>
+    </li>
+    <li><a href="#views">Views</a>
+      <ul>
+        <li><a href="#header-template-1">Header Template</a></li>
+        <li><a href="#comment-line-in-where-clause">Comment line in where clause</a></li>
+      </ul>
+    </li>
+    <li><a href="#references">References</a></li>
+  </ul>
+</nav>
+            </div>
+        </div>
+
+        <h2 id="overview">Overview</h2>
+<p>In this post I try to summarize the best practices for documenting procedures, funtions and views in a relational database; I hope it are useful to you.</p>
+<h2 id="procedures-functions-and-plsql-blocks">Procedures, functions and PL/SQL blocks</h2>
+<h3 id="header-template">Header Template</h3>
+<p>There is not really something like a standard header. The next template is based in SQL Server Management Studio standard header:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sql" data-lang="sql"><span style="color:#75715e">-- =============================================
+</span><span style="color:#75715e">-- Author:      &lt;Name&gt;
+</span><span style="color:#75715e">-- Email:       &lt;Email&gt;
+</span><span style="color:#75715e">-- Create date: &lt;Create Date YYYY/MM/DD&gt;
+</span><span style="color:#75715e">-- Description: &lt;Description&gt;
+</span><span style="color:#75715e">-- --------------------------------------------- 
+</span><span style="color:#75715e">-- Parameters:
+</span><span style="color:#75715e">--   @&lt;Name&gt; - &lt;Type,Description,limits,Restrictions&gt;
+</span><span style="color:#75715e">-- --------------------------------------------- 
+</span><span style="color:#75715e">-- Returns:     &lt;Description&gt;
+</span><span style="color:#75715e">-- --------------------------------------------- 
+</span><span style="color:#75715e">-- Change History:
+</span><span style="color:#75715e">--   &lt;Date YYYY/MM/DD&gt; &lt;Author Email&gt;: &lt;Comments&gt;
+</span><span style="color:#75715e">-- =============================================
+</span></code></pre></div><h3 id="comment-code">Comment Code</h3>
+<p>SQL (and its derivatives T-SQL and PL/SQL) supports similar commenting techniques as most programming languages. You can embed comments in your procedures and functions code:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sql" data-lang="sql"><span style="color:#75715e">-- Simple short comment
+</span></code></pre></div><h3 id="declarations-and-comment-blocks-of-code">Declarations And Comment Blocks of Code</h3>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sql" data-lang="sql"><span style="color:#75715e">-- discount value we are calculating
+</span><span style="color:#75715e"></span>discount Number;
+...
+...
+<span style="color:#75715e">-- Initializing variables
+</span><span style="color:#75715e"></span>discount :<span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>;
+client_name :<span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;juan&#39;</span>;
+</code></pre></div><h3 id="code-separators">Code Separators</h3>
+<p>Many code blocks can be separated as shown below:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sql" data-lang="sql"><span style="color:#75715e">-- =============================================
+</span><span style="color:#75715e">-- Declarations
+</span><span style="color:#75715e">-- =============================================
+</span><span style="color:#75715e"></span>...
+<span style="color:#75715e">-- =============================================
+</span><span style="color:#75715e">-- Calculating discount
+</span><span style="color:#75715e">-- =============================================
+</span></code></pre></div><h3 id="manual-version-control">Manual &ldquo;Version Control&rdquo;</h3>
+<p>There is no code version control built into popular databases. This means that, unless you copy code somewhere or use dedicated version control tool, you only have most recent version of each procedure or function and there is no way to check changes. 
+Best practice is to keep track of changes manually.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sql" data-lang="sql"><span style="color:#75715e">-- =============================================
+</span><span style="color:#75715e">-- Change History:
+</span><span style="color:#75715e">--   &lt;Date YYYY/MM/DD&gt; &lt;Author Email&gt;: &lt;Comments&gt;
+</span><span style="color:#75715e">-- =============================================
+</span></code></pre></div><h4 id="who-when-what-and-why">Who, When, What and Why</h4>
+<p>What you should put into that log is who and when made what change. It is also advised to put information why was this was changed and who requested that change. You could also add more details, like a ticked ID.</p>
+<h3 id="putting-it-all-together">Putting It All Together</h3>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sql" data-lang="sql"><span style="color:#66d9ef">CREATE</span> <span style="color:#66d9ef">OR</span> <span style="color:#66d9ef">REPLACE</span> <span style="color:#66d9ef">PROCEDURE</span> example_procedure (
+<span style="color:#75715e">-- =============================================
+</span><span style="color:#75715e">-- Author:      Juan Carlos Perez
+</span><span style="color:#75715e">-- Email:       juan.perez@example.com
+</span><span style="color:#75715e">-- Create date: 2020/01/21
+</span><span style="color:#75715e">-- Description: A example procedure
+</span><span style="color:#75715e">-- --------------------------------------------- 
+</span><span style="color:#75715e">-- Parameters:
+</span><span style="color:#75715e">--   @PARAM1- Varchar param for example, Accepts nulls
+</span><span style="color:#75715e">--   @PARAM1- Varchar param for example, Not nulls, Min 0 max 1
+</span><span style="color:#75715e">-- --------------------------------------------- 
+</span><span style="color:#75715e">-- Returns:     No apply
+</span><span style="color:#75715e">-- --------------------------------------------- 
+</span><span style="color:#75715e">-- Change History:
+</span><span style="color:#75715e">--   2020/01/23 juan.perez@example.com      : Changed calculation
+</span><span style="color:#75715e">--   2020/02/05 fulano.brown@example.com    : Changed calculation again
+</span><span style="color:#75715e">--   2020/02/13 mike.white@example.com      : Reverted changes
+</span><span style="color:#75715e">-- =============================================
+</span><span style="color:#75715e"></span>    param1   <span style="color:#66d9ef">IN</span>   VARCHAR2,
+    param2   <span style="color:#66d9ef">IN</span>   NUMBER
+) <span style="color:#66d9ef">IS</span>
+<span style="color:#75715e">-- =============================================
+</span><span style="color:#75715e">-- Declarations
+</span><span style="color:#75715e">-- =============================================
+</span><span style="color:#75715e"></span>    <span style="color:#75715e">-- discount value we are calculating
+</span><span style="color:#75715e"></span>    discount      NUMBER;
+    <span style="color:#75715e">-- client name
+</span><span style="color:#75715e"></span>    client_name   VARCHAR(<span style="color:#ae81ff">20</span>);
+<span style="color:#66d9ef">BEGIN</span>
+    <span style="color:#75715e">-- Initializing variables
+</span><span style="color:#75715e"></span>    discount :<span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>;
+    client_name :<span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;juan&#39;</span>;
+    
+    <span style="color:#75715e">-- =============================================
+</span><span style="color:#75715e"></span>    <span style="color:#75715e">-- First Step Calculating discount 
+</span><span style="color:#75715e"></span>    <span style="color:#75715e">-- =============================================
+</span><span style="color:#75715e"></span>    
+    <span style="color:#75715e">-- Getting discount for client
+</span><span style="color:#75715e"></span>    <span style="color:#75715e">-- =============================================
+</span><span style="color:#75715e"></span>    <span style="color:#75715e">-- Change History:
+</span><span style="color:#75715e"></span>    <span style="color:#75715e">--   2020/01/23 juan.perez@example.com      : Changed calculation
+</span><span style="color:#75715e"></span>    <span style="color:#75715e">--   2020/02/05 fulano.brown@example.com    : Changed calculation again
+</span><span style="color:#75715e"></span>    <span style="color:#75715e">-- =============================================
+</span><span style="color:#75715e"></span>    <span style="color:#66d9ef">SELECT</span>
+        client_discount
+    <span style="color:#66d9ef">INTO</span> discount
+    <span style="color:#66d9ef">FROM</span>
+        clientd
+    <span style="color:#66d9ef">WHERE</span>
+        cname <span style="color:#f92672">=</span> client_name;
+
+    discount :<span style="color:#f92672">=</span> discount <span style="color:#f92672">*</span> <span style="color:#ae81ff">100</span>;
+    
+    <span style="color:#75715e">-- =============================================
+</span><span style="color:#75715e"></span>    <span style="color:#75715e">-- Second Step: Updating discount in items
+</span><span style="color:#75715e"></span>    <span style="color:#75715e">-- =============================================
+</span><span style="color:#75715e"></span>    ...
+<span style="color:#66d9ef">END</span> example_procedure;
+</code></pre></div><h2 id="views">Views</h2>
+<h3 id="header-template-1">Header Template</h3>
+<p>Add header after SELECT keyword</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sql" data-lang="sql"><span style="color:#66d9ef">CREATE</span> <span style="color:#66d9ef">VIEW</span> v_test <span style="color:#66d9ef">AS</span>
+    <span style="color:#66d9ef">SELECT</span>
+    <span style="color:#75715e">-- =============================================
+</span><span style="color:#75715e"></span>    <span style="color:#75715e">-- Author:      &lt;Name&gt;
+</span><span style="color:#75715e"></span>    <span style="color:#75715e">-- Email:       &lt;Email&gt;
+</span><span style="color:#75715e"></span>    <span style="color:#75715e">-- Create date: &lt;Create Date YYYY/MM/DD&gt;
+</span><span style="color:#75715e"></span>    <span style="color:#75715e">-- Description: &lt;Description&gt;
+</span><span style="color:#75715e"></span>    <span style="color:#75715e">-- --------------------------------------------- 
+</span><span style="color:#75715e"></span>    <span style="color:#75715e">-- Change History:
+</span><span style="color:#75715e"></span>    <span style="color:#75715e">--   &lt;Date YYYY/MM/DD&gt; &lt;Author Email&gt;: &lt;Comments&gt;
+</span><span style="color:#75715e"></span>    <span style="color:#75715e">-- =============================================
+</span><span style="color:#75715e"></span>        sysdate <span style="color:#66d9ef">AS</span> <span style="color:#66d9ef">current_date</span>
+    <span style="color:#66d9ef">FROM</span>
+        dual;
+</code></pre></div><h3 id="comment-line-in-where-clause">Comment line in where clause</h3>
+<p>Add short comment line in importan where clauses:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sql" data-lang="sql"><span style="color:#66d9ef">CREATE</span> <span style="color:#66d9ef">VIEW</span> v_test <span style="color:#66d9ef">AS</span>
+    <span style="color:#66d9ef">SELECT</span>
+    <span style="color:#75715e">-- =============================================
+</span><span style="color:#75715e"></span>    <span style="color:#75715e">-- Author:      &lt;Name&gt;
+</span><span style="color:#75715e"></span>    <span style="color:#75715e">-- Email:       &lt;Email&gt;
+</span><span style="color:#75715e"></span>    <span style="color:#75715e">-- Create date: &lt;Create Date YYYY/MM/DD&gt;
+</span><span style="color:#75715e"></span>    <span style="color:#75715e">-- Description: &lt;Description&gt;
+</span><span style="color:#75715e"></span>    <span style="color:#75715e">-- --------------------------------------------- 
+</span><span style="color:#75715e"></span>    <span style="color:#75715e">-- Change History:
+</span><span style="color:#75715e"></span>    <span style="color:#75715e">--   &lt;Date YYYY/MM/DD&gt; &lt;Author Email&gt;: &lt;Comments&gt;
+</span><span style="color:#75715e"></span>    <span style="color:#75715e">-- =============================================
+</span><span style="color:#75715e"></span>        sysdate <span style="color:#66d9ef">AS</span> <span style="color:#66d9ef">current_date</span>
+    <span style="color:#66d9ef">FROM</span>
+        dual
+    <span style="color:#66d9ef">WHERE</span>
+        <span style="color:#75715e">-- Simple short comment
+</span><span style="color:#75715e"></span>        <span style="color:#ae81ff">1</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">1</span>;
+</code></pre></div><h2 id="references">References</h2>
+<p><a href="https://dataedo.com/blog/how-to-document-stored-procedures-and-functions-in-database">How to Document Stored Procedures and Functions in Database</a></p>
+
+    </div>
+    <div class="post-footer">
+        <div class="info">
+            
+<span class="separator"><a class="category" href="/categories/guidelines-and-documentation/">Guidelines and documentation</a></span>
+ 
+    <span class="separator"><a class="tag" href="/tags/oracle/">oracle</a><a class="tag" href="/tags/database/">database</a><a class="tag" href="/tags/template/">template</a><a class="tag" href="/tags/documentation/">documentation</a><a class="tag" href="/tags/guidelines/">guidelines</a></span>
+
+        </div>
+    </div>
+
+      
+</div>
+
+
+                </div>
+            </div>
+        </div>
+</body>
+
+
+
+<script type="text/javascript" src="https://jcperezz.github.io/js/jquery.min.86b1e8f819ee2d9099a783e50b49dff24282545fc40773861f9126b921532e4c.js" integrity="sha256-hrHo&#43;BnuLZCZp4PlC0nf8kKCVF/EB3OGH5EmuSFTLkw="></script>
+
+
+
+
+<script type="text/javascript" src="https://jcperezz.github.io/js/bundle.min.0f9c74cb78f13d1f15f33daff4037c70354f98acfbb97a6f61708966675c3cae.js" integrity="sha256-D5x0y3jxPR8V8z2v9AN8cDVPmKz7uXpvYXCJZmdcPK4="></script>
+
+<script type="text/javascript" src="https://jcperezz.github.io/js/medium-zoom.min.92f21c856129f84aeb719459b3e6ac621a3032fd7b180a18c04e1d12083f8aba.js" integrity="sha256-kvIchWEp&#43;ErrcZRZs&#43;asYhowMv17GAoYwE4dEgg/iro="></script></html></body>
+
+</html>
