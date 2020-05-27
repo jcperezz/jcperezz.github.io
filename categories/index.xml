@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Categories on jcperezz blog&#39;s</title>
+    <link>https://jcperezz.github.io/categories/</link>
+    <description>Recent content in Categories on jcperezz blog&#39;s</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Wed, 27 May 2020 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://jcperezz.github.io/categories/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Guidelines and documentation</title>
+      <link>https://jcperezz.github.io/categories/guidelines-and-documentation/</link>
+      <pubDate>Wed, 27 May 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://jcperezz.github.io/categories/guidelines-and-documentation/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>others</title>
+      <link>https://jcperezz.github.io/categories/others/</link>
+      <pubDate>Wed, 27 May 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://jcperezz.github.io/categories/others/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

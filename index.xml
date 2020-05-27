@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>jcperezz blog&#39;s</title>
+    <link>https://jcperezz.github.io/</link>
+    <description>Recent content on jcperezz blog&#39;s</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Wed, 27 May 2020 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://jcperezz.github.io/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Sql Doc Templates</title>
+      <link>https://jcperezz.github.io/2020/05/27/sql-doc-templates/</link>
+      <pubDate>Wed, 27 May 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://jcperezz.github.io/2020/05/27/sql-doc-templates/</guid>
+      <description>Overview In this post I try to summarize the best practices for documenting procedures, funtions and views in a relational database; I hope it are useful to you.</description>
+    </item>
+    
+    <item>
+      <title>Welcome</title>
+      <link>https://jcperezz.github.io/2020/05/27/welcome/</link>
+      <pubDate>Wed, 27 May 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://jcperezz.github.io/2020/05/27/welcome/</guid>
+      <description>Bienvenidos, el propósito de este sitio es tener un espacio personal en la web para subir tutoriales, notas, comentarios como desarrollador de software y hacerlos publicos y accesibles como recurso de consulta para otros compañeros del gremio, espero que sea muy útil y gracias por visitar mi sitio.</description>
+    </item>
+    
+  </channel>
+</rss>

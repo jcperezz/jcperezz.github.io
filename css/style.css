@@ -1,0 +1,27 @@
+.content {
+    width: 70%;
+}
+
+.sidebar {
+    width: 30%;
+}
+
+.sidebar .logo-title .title h3 {
+    text-transform: none;
+}
+
+.post .post-title h1 {
+    text-transform: none;
+}
+
+.post .post-title h2 {
+    text-transform: none;
+}
+
+.post .post-title h3 {
+    text-transform: none;
+}
+
+.page-top {
+    width: 70%;
+}

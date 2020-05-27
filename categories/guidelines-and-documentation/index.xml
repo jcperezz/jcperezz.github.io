@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Guidelines and documentation on jcperezz blog&#39;s</title>
+    <link>https://jcperezz.github.io/categories/guidelines-and-documentation/</link>
+    <description>Recent content in Guidelines and documentation on jcperezz blog&#39;s</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Wed, 27 May 2020 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://jcperezz.github.io/categories/guidelines-and-documentation/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Sql Doc Templates</title>
+      <link>https://jcperezz.github.io/2020/05/27/sql-doc-templates/</link>
+      <pubDate>Wed, 27 May 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://jcperezz.github.io/2020/05/27/sql-doc-templates/</guid>
+      <description>Overview In this post I try to summarize the best practices for documenting procedures, funtions and views in a relational database; I hope it are useful to you.</description>
+    </item>
+    
+  </channel>
+</rss>
